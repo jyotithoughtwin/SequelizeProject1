@@ -31,3 +31,4 @@ export = (sequelize:any, Sequelize:any) => {
     });
     return userDetails;
 };
+
