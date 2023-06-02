@@ -5,6 +5,10 @@ export = (sequelize:any, Sequelize:any) => {
             autoIncrement: true,
             primaryKey: true
         },
+        user_id:{
+            allowNull: false,
+            type: Sequelize.STRING
+        },
         name: {
             allowNull: false,
             type: Sequelize.STRING
@@ -33,3 +37,15 @@ export = (sequelize:any, Sequelize:any) => {
 };
 
 // Jyoti--
+
+
+// @ManyToOne(type => Category)
+// @JoinColumn([
+//     { name: "category_id", referencedColumnName: "id" },
+//     { name: "locale_id", referencedColumnName: "locale_id" }
+// ])
+// category: Category;
+
+// @ManyToOne(() => DataDictionaryEntry)
+// @JoinColumn([{ name: 'status_id', referencedColumnName: 'id' }])
+// status: DataDictionaryEntry

@@ -21,5 +21,8 @@ export = (sequelize:any, Sequelize:any) => {
         tableName: 'Users',
         timestamps: false,
     });
+    
     return User;
 };
+
+// https://sebhastian.com/sequelize-join/
